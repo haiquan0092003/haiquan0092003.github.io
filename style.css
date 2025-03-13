@@ -1,0 +1,306 @@
+/* General Styles and Reset */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Container for consistent margins and padding */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    animation: fadeInDown 0.8s ease-out; /* Header fade-in */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px;
+    animation: fadeInUp 0.5s ease-out backwards; /* stagger navigation links */
+}
+
+nav ul li:nth-child(1) { animation-delay: 0.1s; }
+nav ul li:nth-child(2) { animation-delay: 0.2s; }
+nav ul li:nth-child(3) { animation-delay: 0.3s; }
+nav ul li:nth-child(4) { animation-delay: 0.4s; }
+nav ul li:nth-child(5) { animation-delay: 0.5s; }
+nav ul li:nth-child(6) { animation-delay: 0.6s; }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 12px 18px;
+    border-radius: 7px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Active menu item */
+nav a.active {
+    background: white;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    animation: fadeInUp 0.8s ease-out; /* Main content fade-in */
+}
+
+h1, h2, h3 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.6s ease-out backwards; /* Animate headings */
+}
+
+h1 {
+    font-size: 2.8em;
+    animation-delay: 0.2s;
+}
+
+h2 {
+    font-size: 2.2em;
+    animation-delay: 0.3s;
+}
+
+h3 {
+    font-size: 1.8em;
+    animation-delay: 0.4s;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    padding: 14px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 0.7s ease-out backwards; /* Button fade-in */
+    animation-delay: 0.5s;
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #0056b3, #007bff);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form */
+#contact-form {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    animation: fadeInUp 0.8s ease-out; /* Contact form fade-in */
+}
+
+#contact-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 19px;
+    background: #007bff;
+    border: none;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    animation: fadeInUp 0.7s ease-out backwards; /* Animate the button inside the form */
+    animation-delay: 0.6s;
+}
+
+#contact-form button:hover {
+    background: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #4b4343;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 50px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 0.8s ease-out; /* Footer fade-in */
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 15px;
+    animation: fadeInUp 0.7s ease-out backwards; /* Social links fade-in */
+    animation-delay: 0.7s;
+}
+
+.social-links a {
+    margin: 0 12px;
+    display: inline-block;
+    transition: transform 0.3s, filter 0.3s;
+    filter: invert(1);
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    text-align: left;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    animation: fadeInUp 1s ease-out;
+}
+
+#hero img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 50px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+#hero img:hover {
+    transform: scale(1.05);
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.8em;
+    color: #333;
+    animation: fadeInUp 0.7s ease-out backwards;
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    color: #666;
+    animation: fadeInUp 0.9s ease-out backwards;
+}
+
+/* Make Responsive for smaller screens */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+    #hero img {
+        width: 200px;
+        margin: 0 auto 30px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8em;
+    }
+
+    .hero-content p {
+        font-size: 1.1em;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
