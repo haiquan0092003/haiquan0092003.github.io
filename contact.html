@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Liên hệ</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/phone.ico" type="image/x-icon">
 </head>
@@ -11,38 +11,46 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Về tôi</a></li>
+                <li><a href="portfolio.html">Dự án</a></li>
+                <li><a href="resume.html">Hồ sơ</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Contact Me</h1>
+        <h1>Liên hệ</h1>
+        <section id="contact-info">
+            <h2>Thông tin liên hệ</h2>
+            <p>Email: <a href="mailto:nghquan12345678@gmail.com">nghquan12345678@gmail.com</a></p>
+            <p>Điện thoại: 0372523785</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/nguyenhaiquan" target="_blank">linkedin.com/in/nguyenhaiquan</a></p>
+            <p>GitHub: <a href="https://github.com/haiquan0092003" target="_blank">github.com/haiquan0092003</a></p>
+        </section>
         <section id="contact-form">
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="post"> <!-- REPLACE WITH YOUR FORMSPREE ENDPOINT -->
-                <label for="name">Your Name:</label>
+            <h2>Gửi tin nhắn cho tôi</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="post"> <!-- HÃY THAY THẾ BẰNG FORMSPREE ENDPOINT CỦA BẠN -->
+                <label for="name">Tên của bạn:</label>
                 <input type="text" id="name" name="name" required>
         
-                <label for="email">Your Email:</label>
+                <label for="email">Email của bạn:</label>
                 <input type="email" id="email" name="email" required>
         
-                <label for="message">Message:</label>
+                <label for="message">Tin nhắn:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
         
-                <button type="submit">Send Message</button>
+                <button type="submit">Gửi tin nhắn</button>
             </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Nguyen Hai Quan. All rights reserved.</p>
+        <p>&copy; 2025 Nguyễn Hải Quân. Mọi quyền được bảo lưu.</p>
         <nav>
             <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Điều khoản dịch vụ</a></li>
             </ul>
         </nav>
         <div class="social-links">
